@@ -390,6 +390,7 @@ def test_32():
 @allure.epic("Уведомления")
 @allure.feature("Категории и приоритет")
 @allure.story("Разделение по категориям")
+def test_33():  
     delay_ms = random.randint(1000, 3000)
     with allure.step(f"Ожидание {delay_ms} миллисекунд"):
         time.sleep(delay_ms / 1000)
