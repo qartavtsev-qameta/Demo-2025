@@ -91,6 +91,8 @@ jobs:
       # запускаем тесты и сразу следим за выполнением
       # отправляем данные в ТестОпс по мере поступления
       - name: Run tests
+        env: 
+          ALLURE_LAUNCH_NAME: "TAdviser 2025 - #${{ github.run_number }}"  
         run: allurectl watch -- pytest --alluredir=${ALLURE_RESULTS} --capture=no
         #env:
         #  BRANCH: ${{ github.ref_name }}
