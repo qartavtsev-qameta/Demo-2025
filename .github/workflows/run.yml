@@ -8,9 +8,9 @@ env:
   ALLURE_TOKEN: ${{ secrets.ALLURE_TOKEN }}
   ALLURE_JOB_RUN_ID: ${{ github.event.inputs.ALLURE_JOB_RUN_ID }}
   ALLURE_RESULTS: "allure-results"
-  BROWSER: ${{ inputs.BROWSER || 'OperaGX' }}
-  OS: ${{ inputs.OS || 'Win_11' }}
-  BRANCH: ${{ github.ref_name }}
+#  BROWSER: ${{ inputs.BROWSER || 'OperaGX' }}
+#  OS: ${{ inputs.OS || 'Win_11' }}
+#  BRANCH: ${{ github.ref_name }}
 
 # Триггеры для запуска workflow
 on:
@@ -29,14 +29,14 @@ on:
 # вручную    
   workflow_dispatch:
     inputs:
-      BROWSER:
-        description: Browser
-        required: false
-        default: "OperaGX"
-      OS:
-        description: OS
-        required: false
-        default: "Win_11"
+#      BROWSER:
+#        description: Browser
+#        required: false
+#        default: "OperaGX"
+#      OS:
+#        description: OS
+#        required: false
+#        default: "Win_11"
       ALLURE_JOB_RUN_ID:
         description: "ALLURE_JOB_RUN_ID - service parameter (leave blank)"
         required: false
