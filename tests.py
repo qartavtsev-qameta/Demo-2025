@@ -2,7 +2,6 @@ import allure
 import pytest
 import random
 import time
-import allure
 
 @allure.title("Успешный тест с ожиданием")
 def test_success_with_random_delay():
